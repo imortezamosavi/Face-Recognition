@@ -17,9 +17,13 @@ Detailed Logs: Provides a log file with frame-by-frame details on processing tim
 
 # Requirements
 To run this project, ensure you have the following installed:
+
 Python 3.x
+
 OpenCV
+
 face_recognition
+
 All required Python libraries are listed in the requirements.txt file.
 
 # Installation
