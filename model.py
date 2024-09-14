@@ -8,7 +8,7 @@ logging.basicConfig(filename='face_recognition_log.txt', level=logging.INFO,
                     format='%(asctime)s - %(message)s')
 
 # Load the reference image and encode the face
-img = cv2.imread(r'D:\New folder\images\face-2.jpg')
+img = cv2.imread(r'path/to/reference_image.jpg')
 rgb_img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 face_encodings = face_recognition.face_encodings(rgb_img)
 
@@ -16,7 +16,7 @@ if len(face_encodings) > 0:
     img_encoded = face_encodings[0]  # Store the encoding of the reference image
 
 # Initialize the video capture
-video_capture = cv2.VideoCapture(r'D:\New folder\video\task-video.mp4')
+video_capture = cv2.VideoCapture(r'path/to/video_file.mp4')
 
 # Get the frame rate of the video to calculate the timestamp
 fps = video_capture.get(cv2.CAP_PROP_FPS)
